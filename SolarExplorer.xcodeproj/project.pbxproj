@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B7985B9857753CCBCFC8CC /* venus_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8879B84B890F85CF7F02447F /* venus_texture.jpg */; };
+		0D279FC4ECCCF1E79C958BDE /* PlanetDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313FCF1078788642B7678CC3 /* PlanetDetailCard.swift */; };
+		145840FA9D091CFD930EC24A /* SolarSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01280B7843BC8805C5C6DD7B /* SolarSystemView.swift */; };
+		1568AA9DEE4929E888FD39CF /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F92D3B6FFE1F859E927C1 /* Planet.swift */; };
+		2B7C3F4C900DEA02E8AB0814 /* SolarSystemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8628E21C5B915C9F39E50F /* SolarSystemModel.swift */; };
+		2B8B1CD0E96AF18A8A8E00AE /* earth_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7B795F6580D30D3A7DE46E3 /* earth_texture.jpg */; };
+		305DFB46CD86B7201A40363F /* jupiter_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AD6FDDE7478C7C6ACC18AD0 /* jupiter_texture.jpg */; };
+		31D2C43E05BCC68F2E239A38 /* PlanetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937DD9705A350EC570E87D27 /* PlanetTests.swift */; };
+		3C39D8ADE3BC8F4FE415BAE9 /* OrbitSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463341DAFFD36275DEDBB725 /* OrbitSystemTests.swift */; };
+		3D60CB024844B20C0DC29B03 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D1E4A034304E8A2CC17A4 /* ImmersiveView.swift */; };
+		61B4C3CCACF14A14BD6209EF /* neptune_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A53536E657A27A9F37054 /* neptune_texture.jpg */; };
+		6241FC1B811489E0560470CA /* EntityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5090541D6708A63E50863F8 /* EntityFactory.swift */; };
+		6D50ECB1C397653DFD93707C /* mars_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 318082D9E0D755B1BF2B1E89 /* mars_texture.jpg */; };
+		726563D4D76D954DBBAFF133 /* RotationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D4E6C328948BB4FC49CA0 /* RotationComponent.swift */; };
+		7B4640CC5B05FDB80A6AA7EF /* PlanetTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC1B5BB7976ECED43FA652 /* PlanetTextures.swift */; };
+		9DD3EC05E0AAED6BAA0A1E60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330503E040EE2BC6687F139F /* HomeView.swift */; };
+		A6EE977C492A2ABB00E47FBA /* mercury_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55C21CD15C11DD9AC4C324A9 /* mercury_texture.jpg */; };
+		A88771424F730E0A005F4205 /* uranus_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54FAB6170A4970BD227D7708 /* uranus_texture.jpg */; };
+		B5E94E98AADBC00EE4DC237D /* sun_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D9D585BFD3BB4A363D317B7 /* sun_texture.jpg */; };
+		BA7262D465DCACB8AE0BF38C /* SolarExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06336DD46107C21F2D911B94 /* SolarExplorerTests.swift */; };
+		BADF3282324732D85983FA4C /* saturn_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB545C0D09860457B42BB5B0 /* saturn_texture.jpg */; };
+		BEB9453643B915B38BA01777 /* OrbitComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E174ABC4379AB73A8E9348 /* OrbitComponent.swift */; };
+		C8D2FB5997D587D3948B22AE /* SolarExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F759A9AE9C851FEEF7D67 /* SolarExplorerApp.swift */; };
+		E6830CAA6F6590563CEF086C /* OrbitSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED51B57F73EB7DF3338170 /* OrbitSystem.swift */; };
+		F93088E291E12B029056E24A /* RotationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9BE7AFE6D04B1A4029BA19 /* RotationSystem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7265F191B377A6D3D0CBEB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C3A9CFDA00E2253270C086F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9102C73B2392CB610E439128;
+			remoteInfo = SolarExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01280B7843BC8805C5C6DD7B /* SolarSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemView.swift; sourceTree = "<group>"; };
+		046F92D3B6FFE1F859E927C1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		06336DD46107C21F2D911B94 /* SolarExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarExplorerTests.swift; sourceTree = "<group>"; };
+		182D1E4A034304E8A2CC17A4 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		1AD6FDDE7478C7C6ACC18AD0 /* jupiter_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jupiter_texture.jpg; sourceTree = "<group>"; };
+		2F8628E21C5B915C9F39E50F /* SolarSystemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemModel.swift; sourceTree = "<group>"; };
+		313FCF1078788642B7678CC3 /* PlanetDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailCard.swift; sourceTree = "<group>"; };
+		318082D9E0D755B1BF2B1E89 /* mars_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars_texture.jpg; sourceTree = "<group>"; };
+		330503E040EE2BC6687F139F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		42ED51B57F73EB7DF3338170 /* OrbitSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitSystem.swift; sourceTree = "<group>"; };
+		463341DAFFD36275DEDBB725 /* OrbitSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitSystemTests.swift; sourceTree = "<group>"; };
+		4D2A53536E657A27A9F37054 /* neptune_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neptune_texture.jpg; sourceTree = "<group>"; };
+		54FAB6170A4970BD227D7708 /* uranus_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uranus_texture.jpg; sourceTree = "<group>"; };
+		55C21CD15C11DD9AC4C324A9 /* mercury_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercury_texture.jpg; sourceTree = "<group>"; };
+		71C3D374D07F7F4F269A8741 /* SolarExplorer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SolarExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A9997308C7BC664EFF3DAE /* SolarExplorerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SolarExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8879B84B890F85CF7F02447F /* venus_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus_texture.jpg; sourceTree = "<group>"; };
+		937DD9705A350EC570E87D27 /* PlanetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTests.swift; sourceTree = "<group>"; };
+		9D9D585BFD3BB4A363D317B7 /* sun_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun_texture.jpg; sourceTree = "<group>"; };
+		9DC939D4B57635AE3D2E6EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E4D4E6C328948BB4FC49CA0 /* RotationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationComponent.swift; sourceTree = "<group>"; };
+		9E7F759A9AE9C851FEEF7D67 /* SolarExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarExplorerApp.swift; sourceTree = "<group>"; };
+		AB9BE7AFE6D04B1A4029BA19 /* RotationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationSystem.swift; sourceTree = "<group>"; };
+		B7FC1B5BB7976ECED43FA652 /* PlanetTextures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTextures.swift; sourceTree = "<group>"; };
+		C5090541D6708A63E50863F8 /* EntityFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFactory.swift; sourceTree = "<group>"; };
+		DB545C0D09860457B42BB5B0 /* saturn_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturn_texture.jpg; sourceTree = "<group>"; };
+		E3E174ABC4379AB73A8E9348 /* OrbitComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitComponent.swift; sourceTree = "<group>"; };
+		E7B795F6580D30D3A7DE46E3 /* earth_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth_texture.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0A2A1A871F6803C3D0D9BCD1 /* SolarExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				9DC939D4B57635AE3D2E6EB9 /* Info.plist */,
+				9E7F759A9AE9C851FEEF7D67 /* SolarExplorerApp.swift */,
+				457103A4D94BE0D5D2797452 /* Helpers */,
+				69510428E6DDA1C2F93C0CD3 /* Models */,
+				D34603883AE0239718E4808F /* Resources */,
+				9F04DEA16E029D34989B5904 /* Systems */,
+				910D6F038C71C3985D46E1C0 /* Views */,
+			);
+			path = SolarExplorer;
+			sourceTree = "<group>";
+		};
+		457103A4D94BE0D5D2797452 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5090541D6708A63E50863F8 /* EntityFactory.swift */,
+				B7FC1B5BB7976ECED43FA652 /* PlanetTextures.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		507FBCC222643A8B565E0C8E = {
+			isa = PBXGroup;
+			children = (
+				0A2A1A871F6803C3D0D9BCD1 /* SolarExplorer */,
+				CFA1440ED838B021FC6FD02F /* SolarExplorerTests */,
+				8ADEDFADC09FB1638747C88F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69510428E6DDA1C2F93C0CD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				046F92D3B6FFE1F859E927C1 /* Planet.swift */,
+				2F8628E21C5B915C9F39E50F /* SolarSystemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8ADEDFADC09FB1638747C88F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71C3D374D07F7F4F269A8741 /* SolarExplorer.app */,
+				80A9997308C7BC664EFF3DAE /* SolarExplorerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		910D6F038C71C3985D46E1C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				330503E040EE2BC6687F139F /* HomeView.swift */,
+				182D1E4A034304E8A2CC17A4 /* ImmersiveView.swift */,
+				313FCF1078788642B7678CC3 /* PlanetDetailCard.swift */,
+				01280B7843BC8805C5C6DD7B /* SolarSystemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F04DEA16E029D34989B5904 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				E3E174ABC4379AB73A8E9348 /* OrbitComponent.swift */,
+				42ED51B57F73EB7DF3338170 /* OrbitSystem.swift */,
+				9E4D4E6C328948BB4FC49CA0 /* RotationComponent.swift */,
+				AB9BE7AFE6D04B1A4029BA19 /* RotationSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		CFA1440ED838B021FC6FD02F /* SolarExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				463341DAFFD36275DEDBB725 /* OrbitSystemTests.swift */,
+				937DD9705A350EC570E87D27 /* PlanetTests.swift */,
+				06336DD46107C21F2D911B94 /* SolarExplorerTests.swift */,
+			);
+			path = SolarExplorerTests;
+			sourceTree = "<group>";
+		};
+		D34603883AE0239718E4808F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC9916BBD1E294FCC16F2ACE /* Textures */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC9916BBD1E294FCC16F2ACE /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				E7B795F6580D30D3A7DE46E3 /* earth_texture.jpg */,
+				1AD6FDDE7478C7C6ACC18AD0 /* jupiter_texture.jpg */,
+				318082D9E0D755B1BF2B1E89 /* mars_texture.jpg */,
+				55C21CD15C11DD9AC4C324A9 /* mercury_texture.jpg */,
+				4D2A53536E657A27A9F37054 /* neptune_texture.jpg */,
+				DB545C0D09860457B42BB5B0 /* saturn_texture.jpg */,
+				9D9D585BFD3BB4A363D317B7 /* sun_texture.jpg */,
+				54FAB6170A4970BD227D7708 /* uranus_texture.jpg */,
+				8879B84B890F85CF7F02447F /* venus_texture.jpg */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9102C73B2392CB610E439128 /* SolarExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C66FDFA25CF792801997EDED /* Build configuration list for PBXNativeTarget "SolarExplorer" */;
+			buildPhases = (
+				33C2B013BE45D46D20937DB2 /* Sources */,
+				A3160635D24B0CFA573380B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SolarExplorer;
+			packageProductDependencies = (
+			);
+			productName = SolarExplorer;
+			productReference = 71C3D374D07F7F4F269A8741 /* SolarExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD54C5D6C4BCEBCD949FCE23 /* SolarExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 173A163C91488456C4B79B8D /* Build configuration list for PBXNativeTarget "SolarExplorerTests" */;
+			buildPhases = (
+				76DB200AB0A032ECC1B64FD1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE857FDC71D87FA9B80F8D0C /* PBXTargetDependency */,
+			);
+			name = SolarExplorerTests;
+			packageProductDependencies = (
+			);
+			productName = SolarExplorerTests;
+			productReference = 80A9997308C7BC664EFF3DAE /* SolarExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C3A9CFDA00E2253270C086F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 3FD778BAB303F694F71E4A70 /* Build configuration list for PBXProject "SolarExplorer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 507FBCC222643A8B565E0C8E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9102C73B2392CB610E439128 /* SolarExplorer */,
+				DD54C5D6C4BCEBCD949FCE23 /* SolarExplorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3160635D24B0CFA573380B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B8B1CD0E96AF18A8A8E00AE /* earth_texture.jpg in Resources */,
+				305DFB46CD86B7201A40363F /* jupiter_texture.jpg in Resources */,
+				6D50ECB1C397653DFD93707C /* mars_texture.jpg in Resources */,
+				A6EE977C492A2ABB00E47FBA /* mercury_texture.jpg in Resources */,
+				61B4C3CCACF14A14BD6209EF /* neptune_texture.jpg in Resources */,
+				BADF3282324732D85983FA4C /* saturn_texture.jpg in Resources */,
+				B5E94E98AADBC00EE4DC237D /* sun_texture.jpg in Resources */,
+				A88771424F730E0A005F4205 /* uranus_texture.jpg in Resources */,
+				05B7985B9857753CCBCFC8CC /* venus_texture.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33C2B013BE45D46D20937DB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6241FC1B811489E0560470CA /* EntityFactory.swift in Sources */,
+				9DD3EC05E0AAED6BAA0A1E60 /* HomeView.swift in Sources */,
+				3D60CB024844B20C0DC29B03 /* ImmersiveView.swift in Sources */,
+				BEB9453643B915B38BA01777 /* OrbitComponent.swift in Sources */,
+				E6830CAA6F6590563CEF086C /* OrbitSystem.swift in Sources */,
+				1568AA9DEE4929E888FD39CF /* Planet.swift in Sources */,
+				0D279FC4ECCCF1E79C958BDE /* PlanetDetailCard.swift in Sources */,
+				7B4640CC5B05FDB80A6AA7EF /* PlanetTextures.swift in Sources */,
+				726563D4D76D954DBBAFF133 /* RotationComponent.swift in Sources */,
+				F93088E291E12B029056E24A /* RotationSystem.swift in Sources */,
+				C8D2FB5997D587D3948B22AE /* SolarExplorerApp.swift in Sources */,
+				2B7C3F4C900DEA02E8AB0814 /* SolarSystemModel.swift in Sources */,
+				145840FA9D091CFD930EC24A /* SolarSystemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76DB200AB0A032ECC1B64FD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C39D8ADE3BC8F4FE415BAE9 /* OrbitSystemTests.swift in Sources */,
+				31D2C43E05BCC68F2E239A38 /* PlanetTests.swift in Sources */,
+				BA7262D465DCACB8AE0BF38C /* SolarExplorerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE857FDC71D87FA9B80F8D0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9102C73B2392CB610E439128 /* SolarExplorer */;
+			targetProxy = E7265F191B377A6D3D0CBEB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FA5EE0960C3149DE1297715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8C58EA079CDEAEE6350B3B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SolarExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarexplorer.app;
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		A972D470C9ACD11E7D71CA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarexplorer.tests;
+				SDKROOT = xros;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarExplorer.app/SolarExplorer";
+			};
+			name = Release;
+		};
+		ADCB655D0F49EAADABBA12C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarexplorer.tests;
+				SDKROOT = xros;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SolarExplorer.app/SolarExplorer";
+			};
+			name = Debug;
+		};
+		BA745246D80385C3DC743FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SolarExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.solarexplorer.app;
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+		F698CC9FF6BBAEDECF6D8E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		173A163C91488456C4B79B8D /* Build configuration list for PBXNativeTarget "SolarExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCB655D0F49EAADABBA12C5 /* Debug */,
+				A972D470C9ACD11E7D71CA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3FD778BAB303F694F71E4A70 /* Build configuration list for PBXProject "SolarExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F698CC9FF6BBAEDECF6D8E4F /* Debug */,
+				3FA5EE0960C3149DE1297715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C66FDFA25CF792801997EDED /* Build configuration list for PBXNativeTarget "SolarExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C58EA079CDEAEE6350B3B13 /* Debug */,
+				BA745246D80385C3DC743FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C3A9CFDA00E2253270C086F /* Project object */;
+}
